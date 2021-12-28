@@ -1,0 +1,10 @@
+com\store\auth\dao\AccountPriorityRelationshipDaoTest.class
+com\store\cart\smoke\ShoppingCartSmokeTest.class
+com\store\auth\dao\PriorityDAOTest.class
+com\store\auth\service\PriorityServiceTest.class
+com\store\auth\dao\RolePriorityRelationshipDaoTest.class
+com\store\cart\controller\ShoppingCartControllerTest.class
+com\store\cart\dao\ShoppingCartDaoTest.class
+com\store\cart\dao\ShoppingCartItemDaoTest.class
+com\store\auth\controller\PriorityControllerTest.class
+com\store\cart\service\ShoppingCartServiceTest.class

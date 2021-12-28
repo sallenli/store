@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/oa?userUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    jdbc:
+      user: root
+    password: sallen5201314...
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #连接池配置信息
+    #初始化大小
+    initialSize: 5
+    #最小空闲链接数量
+    min-idle: 5
+    maxActive: 20
+    maxWait: 6000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,slf4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    useGlobalDataSourceStat: true
+
+#自定义配置
+comment:
+  picture:
+    upload:
+     dir: /upload
+     type:  relative

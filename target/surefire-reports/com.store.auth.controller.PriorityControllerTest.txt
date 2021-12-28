@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: com.store.auth.controller.PriorityControllerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 8.201 s <<< FAILURE! - in com.store.auth.controller.PriorityControllerTest
+saveUser(com.store.auth.controller.PriorityControllerTest)  Time elapsed: 0.183 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<true> but was:<>
+	at com.store.auth.controller.PriorityControllerTest.saveUser(PriorityControllerTest.java:78)
+
+updatePriority(com.store.auth.controller.PriorityControllerTest)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<true> but was:<>
+	at com.store.auth.controller.PriorityControllerTest.updatePriority(PriorityControllerTest.java:104)
+
+deletePriority(com.store.auth.controller.PriorityControllerTest)  Time elapsed: 0.027 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<true> but was:<>
+	at com.store.auth.controller.PriorityControllerTest.deletePriority(PriorityControllerTest.java:115)
+
+getPriorityById(com.store.auth.controller.PriorityControllerTest)  Time elapsed: 0.112 s  <<< FAILURE!
+java.lang.AssertionError: 
+code
+Expected: Test-2072452481
+     got: null
+ ; gmtCreate
+Expected: 2021-11-24 01:19:31
+     got: null
+ ; id
+Expected: 2
+     got: null
+ ; parentId
+Expected: 1
+     got: null
+ ; priorityComment
+Expected: test-2072452481
+     got: null
+ ; priorityType
+Expected: 1
+     got: null
+
+	at com.store.auth.controller.PriorityControllerTest.getPriorityById(PriorityControllerTest.java:89)
+
+listRootPriorities(com.store.auth.controller.PriorityControllerTest)  Time elapsed: 0.042 s  <<< FAILURE!
+java.lang.AssertionError: [0] Could not find match for element {"gmtModified":"2021-11-24 01:19:31","code":"Test1736671827","priorityComment":"test1736671827","id":1,"gmtCreate":"2021-11-24 01:19:31","priorityType":1}
+	at com.store.auth.controller.PriorityControllerTest.listRootPriorities(PriorityControllerTest.java:59)
+
